@@ -15,10 +15,10 @@
 
     </tr>
 
-    <tr th:each="carList: ${Car}">
-        <td th:utext="${carList.getBrand()}">brand</td>
-        <td th:utext="${carList.getModel()}">model</td>
-        <td th:utext="${carList.getColor()}">color</td>
+    <tr th:each="car: ${cars}">
+        <td th:utext="${car.getBrand()}">brand</td>
+        <td th:utext="${car.getModel()}">model</td>
+        <td th:utext="${car.getColor()}">color</td>
     </tr>
 
 </table>
